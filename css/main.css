@@ -12,6 +12,7 @@
 Light purple for selection boxes: CBBCE1
 Purple links: 8866bb
 Erica's purple for active nav tab: 660066
+Erica's sandy yellow for non active nav tab: fbf3c1
 super light purple for box backgrounds? : FCF5FF
 Light green for links that have the post box highlighted: C0E1BC
 super light green (potential bg?): F4FCF4
@@ -181,7 +182,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 /* End of banner */
 /* Navigation */
 #banner nav {
-  background: #000305;
+/*the default (shows up if the total width doesn't match the the elements total width*/
+  background: #fbf3c1;
   font-size: 1.60em;
   height: 40px;
   line-height: 30px;
