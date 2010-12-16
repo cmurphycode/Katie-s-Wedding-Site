@@ -33,6 +33,13 @@ Darker green for featured box headings: 70BB68
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'LittleDays';
+	src: url('../fonts/little_days-webfont.eot');
+	src: local('☺'), url('../fonts/little_days-webfont.woff') format('woff'), url('../fonts/little_days-webfont.ttf') format('truetype'), url('../fonts/little_days-webfont.svg#webfontGpn5Zlw8') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 /***** Global *****/
@@ -145,7 +152,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   Header
 *****************/
 #banner {
-  font: 22px/28px 'TangerineRegular', Arial, sans-serif;
+  font: 22px/28px 'LittleDays', Arial, sans-serif;
   letter-spacing: 0;
   margin: 0 auto;
   padding: 2.5em 0 0 0;
@@ -174,7 +181,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 /* Navigation */
 #banner nav {
   background: #000305;
-  font-size: 1.143em;
+  /*font-size: 1.143em;*/
+  font-size: 1em;
   height: 40px;
   line-height: 30px;
   margin: 0 auto 2em auto;
@@ -194,7 +202,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   color: #fff;
   display: inline-block;
   height: 30px;
-  padding: 5px 1.5em;
+  /* The horizontal dead space between the nav text links is the second item */
+  padding: 5px 1em;
   text-decoration: none;
 }
 #banner nav a:hover, #banner nav a:active,
