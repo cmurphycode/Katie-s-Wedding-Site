@@ -11,6 +11,7 @@
 /*
 Light purple for selection boxes: CBBCE1
 Purple links: 8866bb
+Erica's purple for active nav tab: 660066
 super light purple for box backgrounds? : FCF5FF
 Light green for links that have the post box highlighted: C0E1BC
 super light green (potential bg?): F4FCF4
@@ -152,7 +153,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   Header
 *****************/
 #banner {
-  font: 22px/28px 'LittleDays', Arial, sans-serif;
+  font: 14px/28px 'LittleDays', Arial, sans-serif;
   letter-spacing: 0;
   margin: 0 auto;
   padding: 2.5em 0 0 0;
@@ -181,8 +182,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 /* Navigation */
 #banner nav {
   background: #000305;
-  /*font-size: 1.143em;*/
-  font-size: 1em;
+  font-size: 1.60em;
   height: 40px;
   line-height: 30px;
   margin: 0 auto 2em auto;
@@ -199,7 +199,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #banner nav li {float: left; display: inline; margin: 0;}
 
 #banner nav a:link, #banner nav a:visited {
-  color: #fff;
+ /* the non active nav tabs*/
+  color: #660066;
+  background: #fbf3c1;
   display: inline-block;
   height: 30px;
   /* The horizontal dead space between the nav text links is the second item */
@@ -208,7 +210,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 #banner nav a:hover, #banner nav a:active,
 #banner nav .active a:link, #banner nav .active a:visited {
-  background: #8866bb;
+  background: #660066;
   color: #fff;
   text-shadow: none !important;
 }
