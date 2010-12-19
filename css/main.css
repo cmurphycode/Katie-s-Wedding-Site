@@ -218,6 +218,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 #banner nav li:first-child a {
+/* allows us to fit the first element to match the first rounded corners */
   border-top-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -226,6 +227,18 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
 }
+#banner nav li:last-child a {
+/* this allows us to fit the last element to match so there's no ugly yellow */
+  width: 82px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
 /* End of Navigation */
 
 /*Featured*/
