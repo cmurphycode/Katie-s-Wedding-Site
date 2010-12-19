@@ -31,7 +31,7 @@
 <body id="index" class="home">
 <!-- The banner -->
 <header id="banner" class="body">
-  <<img src="images/banner.png" alt="Banner" />
+  <img src="images/banner.png" alt="Banner" />
 
   <nav><ul>
     <li><a href="index.html">Home</a></li>
@@ -66,7 +66,10 @@
 //relative to this page
 Galleria.loadTheme('lib/galleria/src/themes/classic/galleria.classic.js');
 //the string represents how you identified the div
-$('#galleria').galleria();
+$('#galleria').galleria({
+  width: 800
+  }
+);
 </script>
 
 <!-- Footer -->

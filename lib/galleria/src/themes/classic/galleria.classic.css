@@ -8,6 +8,11 @@
     position: relative;
     overflow: hidden;
     background: #000;
+    /* the following three make IE8 and FF center gallery nicely */
+    /* older versions of chrome ignore? i updated and it magically worked*/
+    clear: both;
+    margin: 0 auto; 
+    width: 800px;
 }
 .galleria-container img {
     -moz-user-select: none;

@@ -229,7 +229,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 #banner nav li:last-child a {
 /* this allows us to fit the last element to match so there's no ugly yellow */
-  width: 82px;
+/* width needs to be tweaked depending on what's left. also, off by a few px in firefox, so won't fit perfectly :( */
+  width: 75px;
   border-top-right-radius: 5px;
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
