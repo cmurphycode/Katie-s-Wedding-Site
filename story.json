@@ -1,0 +1,24 @@
+{ 
+  'wiki-url':"http://simile.mit.edu/shelf/", 
+  'wiki-section':"Simile JFK Timeline", 
+  'dateTimeFormat': 'Gregorian',
+  'events': [
+    {
+       'start':"Dec 25 2010 00:00:00 GMT-0600",
+       'title':"Christmas",
+       'durationEvent':false // Notes: not "false". And no trailing comma.
+     },
+    {
+       'start':"July 28 2012 00:00:00 GMT-0600",
+       'title':"The Wedding!",
+       'durationEvent':false // Notes: not "false". And no trailing comma.
+     }, {
+       'start':"July 28 2012 00:00:00 GMT-0600",
+       'end':"July 29 2012 00:00:00 GMT-0600" ,
+       'durationEvent':true,
+       'title':"The Wedding",
+       'description':"Katie and Joe's Wedding at Ocean Edge!"
+     }, {
+      ...
+     } ]    // Note: Do NOT include a trailing comma! (Breaks on IE)
+}

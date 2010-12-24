@@ -9,6 +9,7 @@
 <!-- If you do find any of this useful, please email me at cmurphycode@gmail.com and let me know!-->
       
 <link rel="stylesheet" href="css/main.css" type="text/css" />
+<script src="http://static.simile.mit.edu/timeline/api-2.3.0/timeline-api.js?bundle=true" type="text/javascript"></script>
 <!-- Browser compatability crap -->
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -17,9 +18,40 @@
 <!--[if lt IE 7]>
   <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
 <!-- End Browswer compatability crap -->
+
+<!--timeline scripts-->
+<script type="text/javascript" charset="utf-8"> 
+            function init(){
+                var eventSource = new Timeline.DefaultEventSource(0);
+                var bandInfos = [
+                    Timeline.createBandInfo({
+                        width: '70%',
+                        intervalUnit: Timeline.DateTime.MONTH,
+                        intervalPixels: 100,
+                        eventSource: eventSource
+                    }),
+                    Timeline.createBandInfo({
+                        width: '30%',
+                        intervalUnit: Timeline.DateTime.YEAR,
+                        intervalPixels: 400,
+                        eventSource: eventSource
+                    })
+                ];
+                bandInfos[1].syncWith = 0;
+                bandInfos[1].highlight = true;
+                timeline = Timeline.create(document.getElementById('timeline'),
+                    bandInfos);
+                Timeline.loadJSON("story.json", function(data, url){
+                    eventSource.loadJSON(data, url);
+                });
+            }
+</script> 
 </head>
 
-<body id="index" class="home">
+
+
+
+<body id="index" class="home" onload="init();" onresize="onResize();">
 <!-- The banner -->
 <header id="banner" class="body">
   <img src="images/banner.png" alt="Banner" />
@@ -39,17 +71,23 @@
 
 <!-- Contact content -->
 <section id="content" class="body">
+<div id="timeline" style="height: 150px; border: 1px solid #aaa"></div>
+<noscript>
+This page uses Javascript to show you a Timeline. Please enable Javascript in your browser to see the full page. Thank you.
+</noscript>
 They like lived in the same building freshman year and stuff. And Joe impressed Katie with his lax skills. Bro.
+
+
 </section>
 <!-- Footer -->
 <footer id="contentinfo" class="body">
   <address id="about" class="vcard body">
     <span class="primary">
-      <strong><a href="#" class="fn url">Chris Murphy</a></strong>
+      <strong><a href="#" class="fn url">Chris</a></strong>
 
       <span class="role"></span>
     </span><!-- /.primary -->
-    <span class="bio">You probably don't care. I might actually get rid of this.</span>
+    <span class="bio">There are 582 days until the wedding</span>
 
   </address><!-- /#about -->
 </footer><!-- /#contentinfo -->

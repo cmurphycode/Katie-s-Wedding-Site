@@ -5,7 +5,7 @@
   Version: 1.0
   Author: Enrique Ramírez
   Autor URI: http://enrique-ramirez.com
-  Customized by Chris Murphy
+  Customized by Chris
 */
 
 /*
@@ -16,6 +16,7 @@ Erica's sandy yellow for non active nav tab: fbf3c1
 super light purple for box backgrounds? : FCF5FF
 Light green for links that have the post box highlighted: C0E1BC
 super light green (potential bg?): F4FCF4
+darker green bg: E4ECD4
 Darker green for featured box headings: 70BB68
 */
 
@@ -47,7 +48,7 @@ Darker green for featured box headings: 70BB68
 /***** Global *****/
 /* Body */
   body {
-    background: #F4FCF4 /* what is the point of this? url('../images/bg.png')*/;
+    background: #C4CCB4 /* what is the point of this -> url('../images/bg.png')*/;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -245,7 +246,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 /*Featured*/
 #featured {
-	background: #FCF5FF;
+	background: #ECE5EF;
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px;
@@ -353,13 +354,22 @@ See http://www.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-sc
 	-webkit-border-radius: 10px;
 }
 
-#about .primary {float: left; width: 165px;}
+#about .primary {float: left; width: 125px;}
 #about .primary strong {color: #CBBCE1; display: block; font-size: 1.286em;}
-#about .photo {float: left; margin: 5px 20px;}
+/*#about .photo {float: left; margin: 5px 20px;}*/
 
 #about .url:link, #about .url:visited {text-decoration: none;}
 
-#about .bio {float: right; width: 500px;}
+#about .bio {
+color: #660066;
+font: 20px 'LittleDays', Arial, sans-serif;
+float: right; width: 600px;
+}
+.countdown{
+
+font: 24px 'LittleDays', Arial, sans-serif;
+font-weight: bold;
+}
 
 /*Footer*/
 #contentinfo {padding-bottom: 2em; text-align: right;}
