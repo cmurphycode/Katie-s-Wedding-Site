@@ -158,7 +158,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   font: 14px/26px 'LittleDays', Arial, sans-serif;
   letter-spacing: 0;
   margin: 0 auto;
-  padding: 2.5em 0 0 0;
+  padding: 1em 0 0 0;
   width: 900px;
 }
 
@@ -189,7 +189,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   font-size: 1.60em;
   height: 40px;
   line-height: 30px;
-  margin: 0 auto 2em auto;
+  margin: 0 auto 1em auto;
   padding: 0;
   text-align: center;
   width: 900px;
