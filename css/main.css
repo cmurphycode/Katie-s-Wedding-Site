@@ -412,5 +412,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
         text-shadow: 1px 1px 1px #333;
     }
 
-
+.timeline-default {
+height: 300px; width:800px; margin-left:auto; margin-right:auto;
+}
 
