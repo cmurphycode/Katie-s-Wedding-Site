@@ -30,11 +30,35 @@
             'wikiSection': "Simile Cubism Timeline",
              
             'events' : [
+                    {'start': '2004',
+                    'title': 'Katie and Joe graduate high school',
+                    'durationEvent' : false
+                    },
+                    {'start': '2004',
+                    'end':'2008',
+                    'title': 'Katie and Joe go to Holy Cross',
+                    'durationEvent' : false
+                    },
+                    {'start': '2005',
+                    'title': 'Officially dating!',
+                    'durationEvent' : false
+                    },
+                    {'start': '2007',
+                    'title': 'Katie graduates from Tufts with a teaching degree',
+                    'durationEvent' : false
+                    },
+                    {'start': '2008',
+                    'title': 'Joey starts at Iron Mountain',
+                    'durationEvent' : false
+                    },
+                    {'start': '2009',
+                    'title': 'Katie teaches at Chickering',
+                    'durationEvent' : false
+                    },
                     {'start': '2010',
                     'title': 'Joey proposes',
                     'durationEvent' : false
                     },
-             
                     {'start': '2012',
                     'end': '2012',
                     'title': 'The Wedding!',
@@ -56,7 +80,7 @@
             var bandInfos = [
                 Timeline.createBandInfo({
                     width:          "80%", 
-                    intervalUnit:   Timeline.DateTime.DECADE, 
+                    intervalUnit:   Timeline.DateTime.YEAR, 
                     intervalPixels: 200,
                     eventSource:    eventSource,
                     date:           d,
@@ -65,7 +89,7 @@
                 }),
                 Timeline.createBandInfo({
                     width:          "20%", 
-                    intervalUnit:   Timeline.DateTime.CENTURY, 
+                    intervalUnit:   Timeline.DateTime.DECADE, 
                     intervalPixels: 200,
                     eventSource:    eventSource,
                     date:           d,
@@ -78,6 +102,7 @@
                         
             tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
             //thank you sir http://blog.localkinegrinds.com/2007/11/06/installing-mit-similes-timeline-locally-w-rails-integration/ for the tip
+            // oh it's here too http://code.google.com/p/simile-widgets/wiki/Timeline_DataInTheTimelineFile
             eventSource.loadJSON(events, '');
 
         }
