@@ -21,37 +21,43 @@
 
 <!--timeline scripts-->
 <script type="text/javascript" charset="utf-8"> 
-            function init(){
-                var eventSource = new Timeline.DefaultEventSource(0);
-                var bandInfos = [
-                    Timeline.createBandInfo({
-                        width: '70%',
-                        intervalUnit: Timeline.DateTime.MONTH,
-                        intervalPixels: 100,
-                        eventSource: eventSource
-                    }),
-                    Timeline.createBandInfo({
-                        width: '30%',
-                        intervalUnit: Timeline.DateTime.YEAR,
-                        intervalPixels: 400,
-                        eventSource: eventSource
-                    })
-                ];
-                bandInfos[1].syncWith = 0;
-                bandInfos[1].highlight = true;
-                timeline = Timeline.create(document.getElementById('timeline'),
-                    bandInfos);
-                Timeline.loadJSON("story.json", function(data, url){
-                    eventSource.loadJSON(data, url);
-                });
-            }
+ var tl;
+ function onLoad() {
+   var bandInfos = [
+     Timeline.createBandInfo({
+         width:          "70%", 
+         intervalUnit:   Timeline.DateTime.MONTH, 
+         intervalPixels: 100
+     }),
+     Timeline.createBandInfo({
+         width:          "30%", 
+         intervalUnit:   Timeline.DateTime.YEAR, 
+         intervalPixels: 200
+     })
+   ];
+   bandInfos[1].syncWith = 0;
+   bandInfos[1].highlight = true;
+   
+   tl = Timeline.create(document.getElementById("timeline"), bandInfos);
+   Timeline.loadXML("example1.xml", function(xml, url) { eventSource.loadXML(xml, url); });
+ }
+
+ var resizeTimerID = null;
+ function onResize() {
+     if (resizeTimerID == null) {
+         resizeTimerID = window.setTimeout(function() {
+             resizeTimerID = null;
+             tl.layout();
+         }, 500);
+     }
+ }
 </script> 
 </head>
 
 
 
 
-<body id="index" class="home" onload="init();" onresize="onResize();">
+<body id="index" class="home" onload="onLoad();" onresize="onResize();">
 <!-- The banner -->
 <header id="banner" class="body">
   <img src="images/banner.png" alt="Banner" />
