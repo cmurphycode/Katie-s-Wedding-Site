@@ -18,6 +18,26 @@
     <link rel='stylesheet' href='../styles.css' type='text/css' /> <!-- load your css after Timeline's --> 
     <script> 
         var tl;
+        //loading the data inline == happy local chrome! I suspect because of XSS concerns, but whatever
+        var events = 
+{
+'dateTimeFormat': 'iso8601',
+'wikiURL': "http://simile.mit.edu/shelf/",
+'wikiSection': "Simile Cubism Timeline",
+ 
+'events' : [
+        {'start': '2010',
+        'title': 'Joey proposes',
+        'durationEvent' : false
+        },
+ 
+        {'start': '2012',
+        'end': '2012',
+        'title': 'The Wedding!',
+        'durationEvent' : false
+        }
+]
+};
         function onLoad() {
             var eventSource = new Timeline.DefaultEventSource(0);
             
@@ -28,7 +48,7 @@
             theme.event.bubble.width = 350;
             theme.event.bubble.height = 300;
             
-            var d = Timeline.DateTime.parseGregorianDateTime("1900")
+            var d = Timeline.DateTime.parseGregorianDateTime("2010")
             var bandInfos = [
                 Timeline.createBandInfo({
                     width:          "80%", 
@@ -53,11 +73,9 @@
             bandInfos[1].highlight = true;
                         
             tl = Timeline.create(document.getElementById("tl"), bandInfos, Timeline.HORIZONTAL);
-            // Adding the date to the url stops browser caching of data during testing or if
-            // the data source is a dynamic query...
-            tl.loadJSON("test.js?"+ (new Date().getTime()), function(json, url) {
-                eventSource.loadJSON(json, url);
-            });
+            //thank you sir http://blog.localkinegrinds.com/2007/11/06/installing-mit-similes-timeline-locally-w-rails-integration/ for the tip
+            eventSource.loadJSON(events, '');
+
         }
         var resizeTimerID = null;
         function onResize() {
