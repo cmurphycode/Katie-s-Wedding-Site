@@ -413,6 +413,10 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
     }
 
 .timeline-default {
-height: 300px; width:800px; margin-left:auto; margin-right:auto;
+height: 300px;
+width:800px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:50px;
 }
 
