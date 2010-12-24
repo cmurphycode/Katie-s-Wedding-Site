@@ -11,13 +11,13 @@
 /*
 Light purple for selection boxes: CBBCE1
 Purple links: 8866bb
-Erica's purple for active nav tab: 660066
+Erica's purple for active nav tab and maid box: 660066
 Erica's sandy yellow for non active nav tab: fbf3c1
-super light purple for box backgrounds? : ECE5EF used to be FCF5FF
+super light purple for box backgrounds and maid cards : ECE5EF used to be FCF5FF
 Light green for links that have the post box highlighted: C0E1BC
 super light green (potential bg?): F4FCF4
-darker green bg: E4ECD4
-Darker green for featured box headings: 70BB68
+darker green bg and grooms cards: E4ECD4
+Darker green for featured box headings and groom box: 70BB68
 */
 
 /* Imports */
@@ -420,3 +420,26 @@ margin-right:auto;
 margin-bottom:2em;
 }
 
+/*the wedding party photo styling*/
+.maids {
+border-style:solid;
+border-width:5px;
+border-color: #660066;
+}
+.men {
+border-style:solid;
+border-width:5px;
+border-color: #70BB68;
+}
+
+.moh {
+background: #ECE5EF;
+/* top right bottom left */
+padding: 10px 10px 25px 10px;
+}
+
+.manoh{
+background: #E4ECD4;
+/* top right bottom left */
+padding: 10px 10px 25px 10px;
+}
