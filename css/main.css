@@ -425,11 +425,30 @@ margin-bottom:2em;
 border-style:solid;
 border-width:5px;
 border-color: #660066;
+display: inline-block;
 }
+/*this makes the div float not screw with everything else*/
+/*better solutions here: http://www.pathf.com/blogs/2007/09/developers-note-2/ */
+.maids:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
 .men {
 border-style:solid;
 border-width:5px;
 border-color: #70BB68;
+display: inline-block;
+}
+.men:after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
 }
 
 .moh {
@@ -442,4 +461,9 @@ padding: 10px 10px 25px 10px;
 background: #E4ECD4;
 /* top right bottom left */
 padding: 10px 10px 25px 10px;
+}
+
+.card{
+
+float:left;
 }
