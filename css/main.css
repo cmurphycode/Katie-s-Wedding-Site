@@ -467,3 +467,21 @@ padding: 10px 10px 25px 10px;
 
 float:left;
 }
+
+/* Mapping for the planning page*/
+.mapping{
+float:left;
+display:block;
+padding-right:0em;
+border-style:solid;
+border-width:2px;
+border-color: #70BB68;
+margin: 0px 10px 0px 0px
+}
+.mapping:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
