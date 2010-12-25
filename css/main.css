@@ -472,11 +472,11 @@ float:left;
 .mapping{
 float:left;
 display:block;
-padding-right:0em;
+padding:.2em;
 border-style:solid;
 border-width:2px;
 border-color: #70BB68;
-margin: 0px 10px 0px 0px
+margin: 0px 5px 0px 0px
 }
 .mapping:after {
     content: "."; 
