@@ -181,7 +181,24 @@
 
       <span class="role"></span>
     </span><!-- /.primary -->
-    <span class="bio"><div class="countdown">514</div> days till the wedding!</span>
+    <span class="bio"><div class="countdown">
+    <script language="javascript">
+        <!--
+        today = new Date();
+
+        wedding = new Date("July 28, 2012")
+        msPerDay = 24 * 60 * 60 * 1000 ;
+        timeLeft = (wedding.getTime() - today.getTime());
+        e_daysLeft = timeLeft / msPerDay;
+        daysLeft = Math.floor(e_daysLeft);
+        e_hrsLeft = (e_daysLeft - daysLeft)*24;
+        hrsLeft = Math.floor(e_hrsLeft);
+        minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+        document.write(daysLeft);
+        -->
+    </script>
+    
+    </div> days till the wedding!</span>
 
   </address><!-- /#about -->
 </footer><!-- /#contentinfo -->
