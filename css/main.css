@@ -451,6 +451,11 @@ display: inline-block;
     visibility: hidden;
 }
 
+.honorrow{
+padding: 10px 10px 25px 10px;
+float:left;
+}
+
 .moh {
 background: #ECE5EF;
 /* top right bottom left */
