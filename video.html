@@ -8,11 +8,7 @@
 <!-- please feel free to use any of the code on this website. I couldn't have learned this stuff without the SM tutorial and examining other peoples pages!-->
 <!-- If you do find any of this useful, please email me at cmurphycode@gmail.com and let me know!-->
       
-<!--<link rel="stylesheet" href="css/main.css" type="text/css" />-->
-<!-- importing this way is supposed to make it lower priority. this is old, probably should remove it-->
-<style type="text/css" media="all">
-@import "css/main.css";
-</style>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
 <!-- Browser compatability crap -->
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -21,10 +17,6 @@
 <!--[if lt IE 7]>
   <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
 <!-- End Browswer compatability crap -->
-
-<!-- purty slideshow -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="lib/galleria/src/galleria.js"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -43,15 +35,14 @@
 <body id="index" class="home">
 <!-- The banner -->
 <header id="banner" class="body">
-  <img src="images/banner.png" alt="Banner" />
-
+<img src="images/banner.png" alt="Banner" />
   <nav><ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="story.html">The Story</a></li>
-    <li class="active"><a href="pictures.html">Pictures</a></li>
+    <li><a href="pictures.html">Pictures</a></li>
     <li><a href="planning.html">Planning</a></li>
     <li><a href="party.html">The Party</a></li>
-    <li><a href="video.html">Video</a></li>
+    <li class="active"><a href="video.html">Video</a></li>
     <li><a href="registry.html">Registry</a></li>
     <li><a href="guestbook.html">Guestbook</a></li>
   </ul></nav>
@@ -59,53 +50,10 @@
 </header>
 <!-- /#banner -->
 
-<!-- nice photo slideshow or something -->
+<!-- RSVP content -->
 <section id="content" class="body">
-<div class="content"> 
-        
-        <div id="galleria">
-            <img src="pics/elmo.jpg">        
-            <img alt="Katie and Joe in Aspen!" src="pics/aspen/IMG_0049.jpg"> 
-            <img alt="Katie and Joe in Aspen!" src="pics/aspen/IMG_0094.jpg"> 
-            <img alt="Katie and Joe in Aspen!" src="pics/aspen/IMG_3737.jpg">
-            <img src="pics/chrisgrad.jpg">      
-            <img src="pics/copper.jpg">
-            <img src="pics/hcgrad.jpg">
-            <img src="pics/minigolf.jpg">
-            <img src="pics/minibike.jpg">            
-            <img src="pics/cape/IMG_3275.jpg"> 
-            <img src="pics/brewster1.jpg">
-            <img src="pics/brewsterwinter.jpg">
-            <img src="pics/deck.jpg"> 
-            <img src="pics/brewster2.jpg">
-            <img src="pics/snuggie.jpg"> 
-            <img src="pics/sparklers.jpg">
-            <img src="pics/italy1.jpg"> 
-            <img src="pics/italy2.jpg"> 
-            <img src="pics/italy3.jpg">
-            <img src="pics/italy4.jpg">
-            <img src="pics/ring1.jpg"> 
-            <img src="pics/prop.jpg">
-            <img src="pics/brewrun.jpg"> 
-            <img src="pics/walk.jpg">            
-
-
-
-        </div> 
-</div>
-</section>    
-<script>
-//relative to this page
-Galleria.loadTheme('lib/galleria/src/themes/classic/galleria.classic.js');
-//the string represents how you identified the div
-$('#galleria').galleria({
-  width: 860,
-  autoplay: 6000,
-  transition_speed: 1000
-  }
-);
-</script>
-
+Watch their engagement video!
+</section>
 <!-- Footer -->
 <footer id="contentinfo" class="body">
   <address id="about" class="vcard body">

@@ -209,7 +209,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   display: inline-block;
   height: 30px;
   /* The horizontal dead space between the nav text links is the second item */
-  padding: 5px .9em;
+  padding: 5px .88em;
   text-decoration: none;
 }
 #banner nav a:hover, #banner nav a:active,
