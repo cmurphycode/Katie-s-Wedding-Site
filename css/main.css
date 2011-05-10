@@ -420,6 +420,13 @@ margin-right:auto;
 margin-bottom:2em;
 }
 
+/* engagement video centering */
+.evideo{
+width:400;
+margin-left: auto;
+margin-right: auto;
+}
+
 /*the wedding party photo styling*/
 .maids {
 border-style:solid;
