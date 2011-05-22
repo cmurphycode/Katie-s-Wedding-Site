@@ -194,6 +194,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   text-align: center;
   width: 900px;
 
+  /* rounding at the right edge of the banner */
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -208,8 +209,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   background: #fbf3c1;
   display: inline-block;
   height: 30px;
-  /* The horizontal dead space between the nav text links is the second item */
-  padding: 5px .88em;
+  /* The horizontal dead space between the nav text links is the second item. 
+  FF, Chrome, and Webkit all have different font sizes at this point, so em were misbehaving. */
+  padding: 5px 20px;
   text-decoration: none;
 }
 #banner nav a:hover, #banner nav a:active,
