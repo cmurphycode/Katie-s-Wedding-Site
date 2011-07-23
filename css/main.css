@@ -65,7 +65,7 @@ Darker green for featured box headings and groom box: 70BB68
   }
 
 /* Headings */
-h2 {font-size: 1.571em} /* 22px */
+h2 {font-size: 1.51em} /* 22px */
 h3 {font-size: 1.429em} /* 20px */
 h4 {font-size: 1.286em} /* 18px */
 h5 {font-size: 1.143em} /* 16px */
@@ -192,7 +192,6 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #banner nav {
 /*the default (shows up if the total width doesn't match the the elements total width*/
   background: #fbf3c1;
-  font-size: 1.60em;
   height: 40px;
   line-height: 30px;
   margin: 0 auto 1em auto;
@@ -207,7 +206,10 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 #banner nav ul {list-style: none; margin: 0 auto; width: 900px;}
-#banner nav li {float: left; display: inline; margin: 0;}
+#banner nav li {float: left; display: inline; margin: 0;
+  font-size: 1.570em; /* this is taken by FF but not by chrome, fit to FF5 on win7 */
+
+}
 
 #banner nav a:link, #banner nav a:visited {
  /* the non active nav tabs*/
