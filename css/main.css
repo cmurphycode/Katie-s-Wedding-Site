@@ -293,55 +293,6 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
 
-/*Extras*/
-#extras {margin: 0 auto 3em auto; overflow: hidden;}
-
-#extras ul {list-style: none; margin: 0;}
-#extras li {border-bottom: 1px solid #fff;}
-#extras h2 {
-	color: #8866bb;
-	font-size: 1.429em;
-	margin-bottom: .25em;
-	padding: 0 3px;
-}
-
-#extras a:link, #extras a:visited {
-	color: #444;
-	display: block;
-	border-bottom: 1px solid #F4E3E3;
-	text-decoration: none;
-	padding: .3em .25em;
-}
-
-	/* Blogroll */
-	#extras .blogroll {
-		float: left;
-		width: 615px;
-	}
-
-	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 185px;}
-
-	/* Social */
-	#extras .social {
-		float: right;
-		width: 175px;
-	}
-
-/*remove the borders on the last link of each block */
-#extras li:last-child, /* last <li>*/
-#extras li:last-child a /* <a> of last <li> */
-{border: 0}
-/* Do the same for the others in the last row */
-#extras .blogroll li:nth-last-child(2),
-#extras .blogroll li:nth-last-child(3),
-#extras .blogroll li:nth-last-child(2) a,
-#extras .blogroll li:nth-last-child(3) a {border: 0;}
-
-#extras div[class='social'] a {
-	background-repeat: no-repeat;
-	background-position: 3px 6px;
-	padding-left: 25px;
-}
 
 /* Add cool icons next to certain links 
 See http://www.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/ for more examples*/
