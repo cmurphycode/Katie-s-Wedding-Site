@@ -207,7 +207,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 #banner nav ul {list-style: none; margin: 0 auto; width: 900px;}
 #banner nav li {float: left; display: inline; margin: 0;
-  font-size: 1.570em; /* this is taken by FF but not by chrome, fit to FF5 on win7 */
+  font-size: 1.570em; /* this is taken by all browsers as long as it's at this level, not in just bnav */
 
 }
 
