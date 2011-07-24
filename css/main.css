@@ -54,7 +54,7 @@ Darker green for featured box headings and groom box: 70BB68
 /***** Global *****/
 /* Body */
   body {
-    background: #C4CCB4 /* what is the point of this -> url('../images/bg.png')*/;
+    background: #C4CCB4;
     color: #000305;
     font-size: 100%; /* Base font size: 14px */
     font-family: Brighton,'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
