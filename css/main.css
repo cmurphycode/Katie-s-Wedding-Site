@@ -108,6 +108,12 @@ em, i {font-style: italic;}
 ::-moz-selection {background: #C0E1BC; color: #fff;}
 ::selection {background: #C0E1BC; color: #fff;}
 
+
+/* story page paragraph bigger please */
+p.story{
+font-size: 16px;
+}
+
 /* Lists */
 ul {
   list-style: outside disc;
