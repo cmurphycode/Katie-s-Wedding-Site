@@ -71,10 +71,8 @@ Information about where Katie and Joe are registered is coming soon!
         msPerDay = 24 * 60 * 60 * 1000 ;
         timeLeft = (wedding.getTime() - today.getTime());
         e_daysLeft = timeLeft / msPerDay;
+        e_daysLeft = e_daysLeft + 1; // leap year in 2012
         daysLeft = Math.floor(e_daysLeft);
-        e_hrsLeft = (e_daysLeft - daysLeft)*24;
-        hrsLeft = Math.floor(e_hrsLeft);
-        minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
         document.write(daysLeft);
         -->
     </script>
